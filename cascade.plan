@@ -1,0 +1,16 @@
+==ROADMAP==
+
+PROBLEM: in a botnet, both bots may well be firewalled/ISP home connection protected
+         presumably this is why centralised C2 is still used
+
+listen and recieve packets [X]
+
+forward packets [X] ; not tested in actual simulated network
+cryto check [X]
+
+execute packets [X] ; simple os.system()
+
+persistence if node ip changes (send updates, hope not too many others have changed in the meantime. don't get new peers if they haven't, better to lose one bot than leak info about more) [ ]
+encypt packets in transit?
+stop replay attacks - embed time in command, can't be used again
+                    - and can't be used again quickly either because it'll be dropped as a repeat

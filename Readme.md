@@ -1,0 +1,4 @@
+## Cascade Command and Control System
+
+Decentralised botnet c2. Each bot knows a few peers, and sends any instructions it recieves on to everyone else it knows, making c2 infrastructure hard to sieze or even enumerate. Commands are cryptographically signed to prevent just anyone sending them out now we aren't relying on controlling the central infrastructure. I know this doesn't actually work because a lot of bots are going to be behind firewalls, but I had a working version before I figured that out and hey, it was fun to make. Maybe the same principle could still be useful if for instance each bot has a twitter (or something) and a bunch of peer accounts it regularly checks. Then the service provider could map and shut down the network, but maybe it could be sufficiently subtle or use several different providers or something.
+
